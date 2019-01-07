@@ -1,0 +1,33 @@
+<html ng-app="Demo" ng-controller="AppController">
+  <head>
+    <meta charset="utf-8" />
+    </head>
+  <body>
+    <h1>
+      Lazy Loading Images With Angular
+    </h1>
+   
+
+   
+   
+    
+   <div class="container">
+     <ul class="photos">
+   
+      <li ng-repeat="photo in photos" class="photo">
+     <button type="button" class="btn btn-default" onLike()>Like</button>
+     <button class="share"><i class="fal fa-share-alt"></i></button>
+        <img
+          bn-lazy-src="{{ photo.src }}"
+          width="300"
+          height="300"
+          alt="Christina Cox"
+          />
+  
+
+
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>
